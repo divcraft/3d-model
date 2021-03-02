@@ -108,33 +108,57 @@
         class="clickable">
       </a-entity>
 
-      <a-entity geometry="primitive:circle; radius:0.5" material="color:blue" position="1.5 5 -5"
+      <a-entity id='show-btn' geometry="primitive:circle; radius:0.5" material="color:blue" position="1.5 5 -5"
         text__button_down="align: center; baseline:center; value: show images; wrapCount: 7; font:dejavu"
         event-set__down="_event:click; _target: #images; animation.property: position; animation.to: 0 0 0"
         class="clickable">
       </a-entity>
-
       <!-- Image links. -->
       <a-entity id="images">
         <a-entity id="links" layout="type: line; margin: 3.5" position="-15 5 -10">
-          <a-entity id="waly-test" template="src: #link" data-src="#waly" data-thumb="#waly-thumb"></a-entity>
-          <a-entity template="src: #link" data-src="#katedra" data-thumb="#katedra-thumb"></a-entity>
-          <a-entity template="src: #link" data-src="#filharmonia" data-thumb="#filharmonia-thumb"></a-entity>
-          <a-entity template="src: #link" data-src="#urzad" data-thumb="#urzad-thumb"></a-entity>
+          <a-entity geometry="primitive:plane; height: 2; width: 3" class="clickable photo"
+            event-set__down="_event:click; _target: #images; animation.property: position; animation.to: 0 0 0"
+            template="src: #link" data-src="#waly" data-thumb="#waly-thumb">
+          </a-entity>
+          <a-entity geometry="primitive:plane; height: 2; width: 3" class="clickable photo"
+            event-set__down="_event:click; _target: #images; animation.property: position; animation.to: 0 0 0"
+            template="src: #link" data-src="#katedra" data-thumb="#katedra-thumb"></a-entity>
+          <a-entity geometry="primitive:plane; height: 2; width: 3" class="clickable photo"
+            event-set__down="_event:click; _target: #images; animation.property: position; animation.to: 0 0 0"
+            template="src: #link" data-src="#filharmonia" data-thumb="#filharmonia-thumb"></a-entity>
+          <a-entity geometry="primitive:plane; height: 2; width: 3" class="clickable photo"
+            event-set__down="_event:click; _target: #images; animation.property: position; animation.to: 0 0 0"
+            template="src: #link" data-src="#urzad" data-thumb="#urzad-thumb"></a-entity>
         </a-entity>
 
         <a-entity id="links" layout="type: line; margin: 3.5" position="-15 8 -10">
-          <a-entity template="src: #link" data-src="#bPortowa" data-thumb="#bPortowa-thumb"></a-entity>
-          <a-entity template="src: #link" data-src="#dworzec" data-thumb="#dworzec-thumb"></a-entity>
-          <a-entity template="src: #link" data-src="#fontanna" data-thumb="#fontanna-thumb"></a-entity>
-          <a-entity template="src: #link" data-src="#ratusz" data-thumb="#ratusz-thumb"></a-entity>
+          <a-entity geometry="primitive:plane; height: 2; width: 3" class="clickable photo"
+            event-set__down="_event:click; _target: #images; animation.property: position; animation.to: 0 0 0"
+            template="src: #link" data-src="#bPortowa" data-thumb="#bPortowa-thumb"></a-entity>
+          <a-entity geometry="primitive:plane; height: 2; width: 3" class="clickable photo"
+            event-set__down="_event:click; _target: #images; animation.property: position; animation.to: 0 0 0"
+            template="src: #link" data-src="#dworzec" data-thumb="#dworzec-thumb"></a-entity>
+          <a-entity geometry="primitive:plane; height: 2; width: 3" class="clickable photo"
+            event-set__down="_event:click; _target: #images; animation.property: position; animation.to: 0 0 0"
+            template="src: #link" data-src="#fontanna" data-thumb="#fontanna-thumb"></a-entity>
+          <a-entity geometry="primitive:plane; height: 2; width: 3" class="clickable photo"
+            event-set__down="_event:click; _target: #images; animation.property: position; animation.to: 0 0 0"
+            template="src: #link" data-src="#ratusz" data-thumb="#ratusz-thumb"></a-entity>
         </a-entity>
 
         <a-entity id="links" layout="type: line; margin: 3.5" position="-15 2 -10">
-          <a-entity template="src: #link" data-src="#kWojciecha" data-thumb="#kWojciecha-thumb"></a-entity>
-          <a-entity template="src: #link" data-src="#komenda" data-thumb="#komenda-thumb"></a-entity>
-          <a-entity template="src: #link" data-src="#kotwica" data-thumb="#kotwica-thumb"></a-entity>
-          <a-entity template="src: #link" data-src="#poczta" data-thumb="#poczta-thumb"></a-entity>
+          <a-entity geometry="primitive:plane; height: 2; width: 3" class="clickable photo"
+            event-set__down="_event:click; _target: #images; animation.property: position; animation.to: 0 0 0"
+            template="src: #link" data-src="#kWojciecha" data-thumb="#kWojciecha-thumb"></a-entity>
+          <a-entity geometry="primitive:plane; height: 2; width: 3" class="clickable photo"
+            event-set__down="_event:click; _target: #images; animation.property: position; animation.to: 0 0 0"
+            template="src: #link" data-src="#komenda" data-thumb="#komenda-thumb"></a-entity>
+          <a-entity geometry="primitive:plane; height: 2; width: 3" class="clickable photo"
+            event-set__down="_event:click; _target: #images; animation.property: position; animation.to: 0 0 0"
+            template="src: #link" data-src="#kotwica" data-thumb="#kotwica-thumb"></a-entity>
+          <a-entity geometry="primitive:plane; height: 2; width: 3" class="clickable photo"
+            event-set__down="_event:click; _target: #images; animation.property: position; animation.to: 0 0 0"
+            template="src: #link" data-src="#poczta" data-thumb="#poczta-thumb"></a-entity>
         </a-entity>
       </a-entity>
 

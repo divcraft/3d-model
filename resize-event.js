@@ -1,7 +1,7 @@
-console.log('ok')
-const image = document.getElementById('waly-test')
-console.log(image)
+const photos = document.querySelectorAll('.photo');
+const backgroundPhoto = document.getElementById('image-360');
 
-image.addEventListener('click', () => {
-  this.style.position = 'absolute';
-})
+photos.forEach(photo => photo.addEventListener('click', () => {
+  imageSrc = photo.dataset.src;
+  backgroundPhoto.setAttribute('src', imageSrc);
+}))
